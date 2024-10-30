@@ -12,23 +12,47 @@
         <h1 class="text-xl font-extrabold text-white text-center">Feed Wars</h1>
     </header>
     
-    <main class="flex w-full p-7 gap-5">
+    <main class="flex w-full max-w-5xl p-7 gap-5 mx-auto">
         <!-- Caixa de perfil -->
-        <div class="bg-gray-800 w-52 h-64 rounded-xl text-center text-slate-400 ml-16">
-            <img src="img/backgroundcard.jpg" alt="background" class="w-full h-16 object-cover p-0">
+        <div class="bg-gray-800 w-52 h-64 rounded-xl text-center text-slate-400">
+            <img src="img/backgroundcard.jpg" alt="background" class="w-full h-16 object-cover p-0 rounded-t-xl">
             <img src="img/foroperfil.jpg" alt="perfil" class="w-16 border border-blue-800 rounded-xl mx-auto -mt-6 relative">
             <h4 class="text-white mt-2 font-bold">Darth Vader</h4>
-            Sith
+            <p>Sith</p>
             <hr class="border-gray-600 my-4">
             <button class="w-36 h-10 text-blue-400 border border-blue-400 rounded-lg">Editar seu perfil</button>
         </div>
         
-        <!-- Caixa de comentários -->
-        <ul class="flex-1 bg-gray-800 rounded-xl p-5 text-slate-400 mr-16">
-            <li class="bg-gray-700 p-4 rounded-xl mb-4">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. At aperiam impedit aut natus non ratione voluptatem aliquid fugiat ex deserunt unde eligendi quidem necessitatibus, vitae suscipit consequuntur illo dolorum. Illo.
+        <!-- Caixa de conteúdo -->
+        <ul class="flex-1 bg-gray-800 rounded-xl p-8 text-white">
+            <li>
+                <div class="flex justify-between">
+                    <div class="flex gap-2">
+                        <img src="img/foroperfil.jpg" alt="perfil" class="w-14 border border-blue-800 rounded-xl">
+                        <div class="text-slate-400">
+                            <h4 class="text-white mt-2 font-bold">Darth Vader</h4>
+                            <p class="text-left">Sith</p>
+                        </div>
+                    </div> 
+                    <div>
+                        19 de novembro de 2024
+                    </div>
+                </div>
+                <br>
+                <p class="mb-3 ">
+                    As vezes, é bom usar o lado negro da Força.
+                    <p class="mb-5 text-blue-500 "> <a href="" class="hover:underline ">#DarkSide</a> <a href="" class="hover:underline">#SithLife</a> </p>
+                </p>
+                <hr class="border-gray-600 my-4"> <!-- Caixa de comentário -->
+                <h3 class="font-bold">Deixe seu comentário:</h3>
+                <br>
+                <div >
+                    <form action="">
+                        <textarea type="text" name="comentario" id="comentario" placeholder="Insira seu comentário" class="bg-gray-700 p-4 rounded-xl mb-4 w-full focus:border-white resize-none ">
+                        </textarea>
+                    </form>
+                </div>
             </li> 
-            <!-- Adicione mais itens de comentário, se necessário -->
         </ul>
     </main>
     
