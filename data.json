@@ -1,0 +1,24 @@
+{"users:": [
+    {
+      "id": 0,
+      "name": "Darth Vader",
+      "role": "Sith",
+      "profileUrl":
+        "img/fotoperfil.jpg"
+    },
+    {
+        "id": 1,
+        "name": "Luke Skywalker",
+        "role": "Jedi",
+        "profileUrl":
+          "img/perfilluke.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Leia Organa",
+        "role": "Rebel",
+        "profileUrl":
+          "img/perfilLeia.jpg"
+      }
+  ]
+}
