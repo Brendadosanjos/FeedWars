@@ -20,6 +20,7 @@
       }
     ],
     "posts": [
+
       {
         "id": 2,
         "userId": 1,
@@ -30,27 +31,6 @@
           {
             "userId": 0,
             "content": "Luke, um dia você vai entender o equilíbrio entre a luz e a escuridão.",
-            "publishedAt": "2023-10-15T13:00:00Z",
-            "likes": 0
-          }
-        ]
-      },
-      {
-        "id": 1,
-        "userId": 0,
-        "content": "Às vezes, é bom usar o lado negro da Força.",
-        "hashtags": ["DarkSide", "SithLife"],
-        "publishedAt": "2023-10-15T13:00:00Z",
-        "comments": [
-          {
-            "userId": 1,
-            "content": "Darth Vader, você está perdendo a sua humanidade.",
-            "publishedAt": "2023-10-15T13:00:00Z",
-            "likes": 0
-          },
-          {
-            "userId": 2,
-            "content": "É hora de se redimir, Vader.",
             "publishedAt": "2023-10-15T13:00:00Z",
             "likes": 0
           }

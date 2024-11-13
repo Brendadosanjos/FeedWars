@@ -47,7 +47,7 @@ export default function App() {
   return (
     <>
      <Title/>
-     <div className="flex justify-center gap-8 items-start py-8 bg-zinc-900 h-full w-full">
+     <div className="flex justify-center gap-8 items-start py-8 bg-zinc-900 h-full w-screen">
      <CardAside/>
      <div className="grid grid-cols-1 gap-12 w-full max-w-2xl">
      {posts.map((post) => (<Post key ={post.id} {...post}/>))}

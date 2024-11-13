@@ -49,23 +49,23 @@
             "likes": 0
           },
           {
+            "id": 3,
+            "userId": 2,
+            "content": "Rebeldes, unam-se!",
+            "hashtags": ["RebelAlliance", "FreedomFighters"],
+            "publishedAt": "2023-10-15T13:00:00Z",
+            "comments": [
+              {
+                "userId": 1,
+                "content": "Estamos com você, Leia.",
+                "publishedAt": "2023-10-15T13:00:00Z",
+                "likes": 0
+              }
+            ]
+          }
+          {
             "userId": 2,
             "content": "É hora de se redimir, Vader.",
-            "publishedAt": "2023-10-15T13:00:00Z",
-            "likes": 0
-          }
-        ]
-      },
-      {
-        "id": 3,
-        "userId": 2,
-        "content": "Rebeldes, unam-se!",
-        "hashtags": ["RebelAlliance", "FreedomFighters"],
-        "publishedAt": "2023-10-15T13:00:00Z",
-        "comments": [
-          {
-            "userId": 1,
-            "content": "Estamos com você, Leia.",
             "publishedAt": "2023-10-15T13:00:00Z",
             "likes": 0
           }
