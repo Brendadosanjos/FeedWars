@@ -4,13 +4,13 @@
         "id": 0,
         "name": "Darth Vader",
         "role": "Sith",
-        "profileUrl": "public/fotoperfil.jpg"
+        "profileUrl": "fotoperfil.jpg"
       },
       {
         "id": 1,
         "name": "Luke Skywalker",
         "role": "Jedi",
-        "profileUrl": "public/perfilluke.jpg"
+        "profileUrl": "perfilluke.jpg"
       },
       {
         "id": 2,

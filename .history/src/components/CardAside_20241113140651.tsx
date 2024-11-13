@@ -36,9 +36,9 @@ export function CardAside() {
       </header>
       <main className="flex flex-col items-center rounded-xl gap-2 relative bottom-6">
         <img
-          src="public/fotoperfil.jpg"
+          src={me?.profileUrl}
           alt="darth vader serio"
-          className="w-20 rounded-xl border-2 border-sky-600 "
+          className="w-16 rounded-xl border-2 border-sky-600 "
         />
         <h2 className="font-bold text-white">{me?.name}</h2>
         <p className="text-zinc-500 text-lg">{me?.role}</p>

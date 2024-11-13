@@ -41,7 +41,7 @@ export function Post(props: PostType) {
           <p className="text-white">
             {props.content}
           </p>
-          <p className="text-sky-500">{Array.isArray(props.hashtags) && props.hashtags.join(', ')}</p>
+          <p className="text-sky-500">Array.isArray(props.hashtags) && props.hashtags.join(', ')}</p>
         </div>
 
         <Separator className="bg-zinc-600 my-4" />

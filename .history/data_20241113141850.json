@@ -4,7 +4,7 @@
         "id": 0,
         "name": "Darth Vader",
         "role": "Sith",
-        "profileUrl": "public/fotoperfil.jpg"
+        "profileUrl": "/public/fotoperfil.jpg"
       },
       {
         "id": 1,

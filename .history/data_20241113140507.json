@@ -10,13 +10,13 @@
         "id": 1,
         "name": "Luke Skywalker",
         "role": "Jedi",
-        "profileUrl": "public/perfilluke.jpg"
+        "profileUrl": "
       },
       {
         "id": 2,
         "name": "Leia Organa",
         "role": "Rebel",
-        "profileUrl": "public/perfilLeia.jpg"
+        "profileUrl": "https://pbs.twimg.com/profile_images/1131990281413365760/eVXBPmA__400x400.jpg"
       }
     ],
     "posts": [
