@@ -8,7 +8,8 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "start": "npx json-server data.json"
+    "start": "npx json-server data.json",
+    "server": "json-server --watch data.json --port 3000"
   },
   "dependencies": {
     "@radix-ui/react-icons": "^1.3.1",
