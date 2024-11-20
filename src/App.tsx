@@ -34,7 +34,7 @@ export default function App() {
 
   const API_BASE_URL = "http://localhost:3000";
 
-  // Função para buscar usuários
+
   async function getUsers() {
     try {
       const response = await fetch(`${API_BASE_URL}/users`);
@@ -49,7 +49,6 @@ export default function App() {
     }
   }
 
-  // Função para buscar posts
   async function getPosts() {
     try {
       const response = await fetch(`${API_BASE_URL}/posts`);
@@ -64,7 +63,6 @@ export default function App() {
     }
   }
 
-  // Carregar posts e usuários ao montar o componente
   useEffect(() => {
     async function fetchData() {
       setLoading(true);
@@ -77,7 +75,6 @@ export default function App() {
     fetchData();
   }, []);
 
-  // Renderização da aplicação
   return (
     <>
       <Title />
