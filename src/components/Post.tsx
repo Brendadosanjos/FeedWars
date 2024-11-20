@@ -31,13 +31,13 @@ export function Post(props: PostType) {
   const [comments, setComments] = useState(props.comments || []);
   const [currentUser, setCurrentUser] = useState<User | null>(null);
 
-  // Busca os dados do "me" do data.json
+  // Busca o usuário atual
   useEffect(() => {
     async function fetchCurrentUser() {
       try {
         const response = await fetch("http://localhost:3000/me");
         const data = await response.json();
-        setCurrentUser(data[0]); // Assume que o "me" é um array com apenas um usuário
+        setCurrentUser(data[0]);
       } catch (error) {
         console.error("Erro ao carregar o usuário atual:", error);
       }
@@ -46,6 +46,7 @@ export function Post(props: PostType) {
     fetchCurrentUser();
   }, []);
 
+  // Adiciona novo comentário
   async function handleCommentSubmit(content: string) {
     if (!currentUser) return;
 
@@ -58,6 +59,11 @@ export function Post(props: PostType) {
     };
 
     setComments((prev) => [...prev, newComment]);
+  }
+
+  // Remove comentário
+  function handleCommentDelete(index: number) {
+    setComments((prev) => prev.filter((_, i) => i !== index));
   }
 
   return (
@@ -91,8 +97,17 @@ export function Post(props: PostType) {
         {comments.map((comment, index) => (
           <div
             key={index}
-            className="flex items-start gap-4 text-white border-b border-zinc-700 pb-4 mb-4"
+            className="relative flex items-start gap-4 text-white border-b border-zinc-700 pb-4 mb-4"
           >
+            {/* Botão "X" para excluir */}
+            <button
+              onClick={() => handleCommentDelete(index)}
+              className="absolute top-0 right-0 text-white hover:text-red-700"
+              title="Excluir comentário"
+            >
+              x
+            </button>
+
             <img
               src={comment.user?.profileUrl || "public/default-profile.jpg"}
               alt={comment.user?.name || "Comentário"}

@@ -37,7 +37,7 @@ export function CardAside() {
         <img
           src="public/fotoperfil.jpg"
           alt="darth vader"
-          className="w-20 rounded-xl border-2 border-sky-600 "
+          className="w-20 rounded-full border-2 border-sky-600 "
         />
         <h2 className="font-bold text-white">{"Darth Vader"}</h2>
         <p className="text-zinc-500 text-lg">{"Sith"}</p>
